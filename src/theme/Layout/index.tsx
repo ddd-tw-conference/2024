@@ -1,4 +1,6 @@
+/** @jsx jsx */
 import type { WrapperProps } from "@docusaurus/types";
+import { jsx } from "@emotion/react";
 import { MDXProvider } from "@mdx-js/react";
 import {
   CssVarsProvider,
@@ -7,7 +9,8 @@ import {
 } from "@mui/joy/styles";
 import Layout from "@theme-original/Layout";
 import type LayoutType from "@theme/Layout";
-import React, { ComponentProps, ReactNode, memo, useEffect } from "react";
+
+import { ComponentProps, Fragment, ReactNode, memo, useEffect } from "react";
 
 import { useColorMode } from "@docusaurus/theme-common";
 import {
@@ -21,6 +24,8 @@ import {
   Typography,
   TypographyProps,
 } from "@mui/joy";
+
+import { extendTheme } from "@mui/joy/styles";
 
 type Props = WrapperProps<typeof LayoutType> & {
   children: ReactNode;
@@ -63,8 +68,8 @@ const components: ComponentProps<typeof MDXProvider>["components"] = {
   blockquote: memo(function Blockquote(props: AlertProps<"blockquote">) {
     return <Alert {...props} component="blockquote" />;
   }),
-  wrapper: memo(function Wrapper(props: StackProps<"article">) {
-    return <Stack {...props} component="article" className="markdown" />;
+  wrapper: memo(function Wrapper(props: StackProps<"section">) {
+    return <Stack {...props} component="section" className="markdown" />;
   }),
 };
 
@@ -77,12 +82,58 @@ const JoyMdxProvider = memo(function JoyMdxProvider({
 });
 
 const SyncJoyTheme = memo(function SyncJoyTheme() {
-  const colorMode = useColorMode();
+  const { colorMode } = useColorMode();
   const { setMode } = useColorScheme();
   useEffect(() => {
-    setMode(colorMode.isDarkTheme ? "dark" : "light");
-  }, [colorMode.isDarkTheme, setMode]);
+    setMode(colorMode);
+  }, [colorMode, setMode]);
   return null;
+});
+
+const theme = extendTheme({
+  fontFamily: {
+    display: "var(--ifm-font-family-base)",
+    body: "var(--ifm-font-family-base)",
+    fallback: "var(--ifm-font-family-base)",
+  },
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: {
+          100: "#e6eef5",
+          200: "#597da7",
+          300: "#4e6e94",
+          400: "#4b6a8e",
+          500: "#446081",
+          600: "#3d5674",
+          700: "#3a526e",
+          800: "#30435a",
+          900: "#2b3a4f",
+        },
+        background: {
+          body: "var(--ifm-background-color)",
+        },
+      },
+    },
+    dark: {
+      palette: {
+        primary: {
+          100: "#ffffff",
+          200: "#ffffff",
+          300: "#dfeaf8",
+          400: "#cedff5",
+          500: "#acc9ee",
+          600: "#8ab3e7",
+          700: "#79a8e4",
+          800: "#4687d9",
+          900: "#2b3a4f",
+        },
+        background: {
+          body: "var(--ifm-background-color)",
+        },
+      },
+    },
+  },
 });
 
 const BindJoyTheme = memo(function BindJoyTheme({
@@ -90,16 +141,16 @@ const BindJoyTheme = memo(function BindJoyTheme({
 }: {
   children: ReactNode;
 }) {
-  const colorMode = useColorMode();
+  const { colorMode } = useColorMode();
   return (
-    <>
+    <Fragment>
       {getInitColorSchemeScript()}
-      <CssVarsProvider defaultMode={colorMode.isDarkTheme ? "dark" : "light"}>
+      <CssVarsProvider defaultMode={colorMode} theme={theme}>
         <CssBaseline />
         <SyncJoyTheme />
         {children}
       </CssVarsProvider>
-    </>
+    </Fragment>
   );
 });
 

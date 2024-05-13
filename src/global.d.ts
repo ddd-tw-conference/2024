@@ -1,11 +1,23 @@
-type Png = string;
+type ComponentType<P = {}> = import("react").ComponentType<P>;
+
+type Img = {
+  __brand: "Img";
+};
 
 declare module "*.png" {
-  const value: Png;
+  const value: Img;
+  export default value;
+}
+
+declare module "*.jpg" {
+  const value: Img;
   export default value;
 }
 
 declare module "@theme/IdealImage" {
-  const Image: ({ img: Png }) => JSX.Element;
+  type Props = {
+    img: Img;
+  };
+  declare const Image: ComponentType<Props>;
   export default Image;
 }

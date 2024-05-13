@@ -2,40 +2,36 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+## Installation
 
-```
-$ yarn
+```sh
+pnpm i
 ```
 
-### Local Development
+## Local Development
 
-```
-$ yarn start
+```sh
+pnpm run start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+To develop with `zh-Hant` locale, run:
+
+```sh
+pnpm run start:zh
+```
+
+## Build
 
 ```
-$ yarn build
+pnpm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
+If you want to deploy the distribution under path other than `/2023/`, you can pass the environment variable `BASE_URL` to the build command:
 
-Using SSH:
-
+```sh
+BASE_URL=/ pnpm run build
 ```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

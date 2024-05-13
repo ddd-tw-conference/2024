@@ -1,20 +1,20 @@
-import thumbnail from "@site/src/assets/cover.png";
-import Image from "@theme/IdealImage";
-import React, { ReactNode, memo } from "react";
+/** @jsx jsx */
+import { jsx } from "@emotion/react";
+import { CardContent, Stack } from "@mui/joy";
+import { ReactNode, memo } from "react";
 
-const Index = memo(function Index({
-  content,
-  sponsorRequest,
-}: {
-  content: ReactNode;
-  sponsorRequest: ReactNode;
-}) {
+const Index = memo(function Index({ content }: { content: ReactNode }) {
   return (
-    <div className="container">
-      <Image img={thumbnail} />
-      {content}
-      {sponsorRequest}
-    </div>
+    <Stack
+      className="container"
+      sx={{
+        gap: "2rem",
+        mb: "5rem",
+      }}
+    >
+      {/* <Image img={thumbnail} /> */}
+      <CardContent>{content}</CardContent>
+    </Stack>
   );
 });
 

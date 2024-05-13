@@ -1,20 +1,47 @@
-- 活動日期：9/16 ~ 9/17
-- 徵稿截止時間：2023 / 6 / 30
-- 遴選訪談：預計 7 月 1 日 ~ 7 月 14 日。
-- 結果通知：預計 7 月 17 日。
+import { css, jsx } from '@emotion/react';
+import Link from '@docusaurus/Link';
+import { Divider } from '@mui/joy';
+import { CustomBulletUl } from '@site/src/components/CustomBulletUl';
+import { FocusButton } from '@site/src/components/FocusButton';
+import { Info } from '@site/src/components/Home/zh-Hant/Info';
+import { SponsorList } from '@site/src/components/Home/zh-Hant/Sponsor-list';
+import { IconGroups } from '@site/src/components/Home/zh-Hant/IconGroups';
+import { DDDinfo } from '@site/src/components/Home/zh-Hant/DDDinfo';
 
-今年大會主題為「啟發」，徵集各地 DDD 實踐者們的真實故事，邀請這些實踐者跟大家分享這段旅程中的改變、體會、與成長。
+<Info />
 
-徵集主題方向包括但不限於：
+<IconGroups />
 
-→ 各產業真實案例，各種成功或踩雷經驗分享。
+<DDDinfo />
 
-→ 對應於團隊協作，乃至於組織文化的變革和衝擊。
+<p css={css`
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 60px;
+  `}>
+  贊助商
+</p>
 
-→ DDD 戰略與戰術的實踐技巧應用。
+<SponsorList />
 
-→ 架構設計與應對遺留系統的轉移。
+<p
+  css={css`
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+  `}
+>
+  歡迎加入志工團隊
+</p>
 
-→ 現場撰寫程式。
-
-→ DDD 在實際的工作中與其他主題搭配的話題，Ex: 敏捷、DevOps、測試、UX…… 等領域。
+<p
+  css={css`
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  `}
+>
+  每一次的活動都需要志工夥伴貢獻專長來讓活動順利進行，如果對 DDD 有興趣，歡迎
+  <Link to="/volunteer">報名加入志工</Link>！
+</p>
