@@ -6,7 +6,7 @@ const BASE_URL = process.env["BASE_URL"] ?? "/2024/";
 
 const title = "DDDesign TW";
 const description =
-  "DDD 年會團隊在此正式宣佈：DDDTW 領域驅動設計年會，即將於 9/16, 9/17 盛大舉辦！本次年會主題為：「啟發」。依循著過去的足跡，期望讓參與者在活動中感受到 DDD 的創新與靈感，啟發參與者在日常工作中應用 DDD 的可能性。";
+  "DDD 年會團隊在此正式宣佈：DDDTW 領域驅動設計年會，即將於 9/13 盛大舉辦！本次年會主題為：「系統設計與社會技術年會（System Design & Socio-technical Conference）」。圍繞「遺留工作負載（legacy workloads）」和現代應用程式的演變，邀請大家共同探討這些工作負載在當今商業環境中所帶來的挑戰和機遇。討論遺留工作負載的演進，以及如何應對它們的變化，並探索系統設計的複雜性，重點考慮社會技術因素對軟體開發決策和執行的影響。期待深入探討企業決策者和一線執行團隊之間的合作方式，以實現系統設計和開發的目標。";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
