@@ -101,7 +101,7 @@
             </div>
             <div class="text-center pt-10 pb-10">
                 <a class="bg-cyan-500 hover:bg-cyan-600 mx-auto rounded pt-2 pb-2 pl-5 pr-5"
-                   href="https://docs.google.com/forms/d/e/1FAIpQLScHzz1R2VWTucFQ3rZfPfod6MjPeSZ1hLEC74p2Ncnmd-vtEg/viewform"
+                   href="https://docs.google.com/forms/d/1Xlaitcjqt8UyugU0RinvCkZLiOaU1jPE8zxTIp_VypI/viewform?edit_requested=true"
                    target="_blank">
                     加入志工
                 </a>
