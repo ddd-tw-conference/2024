@@ -30,7 +30,7 @@
             </div>
             <div class="text-center pt-10 pb-10">
                 <a class="bg-cyan-500 hover:bg-cyan-600 mx-auto rounded pt-2 pb-2 pl-5 pr-5"
-                   href=""
+                   href="https://forms.gle/y7EiajzNQx2ZZsUd8"
                    rel="noopener noreferrer"
                    target="_blank">
                     成為講者
