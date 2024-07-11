@@ -20,7 +20,7 @@
 
             </div>
             <div class="text-center pt-30 pb-10">
-                <a class="bg-cyan-500 hover:bg-cyan-600 mx-auto rounded pt-2 pb-2 pl-5 pr-5" href="/sponsor">
+                <a class="bg-cyan-500 hover:bg-cyan-600 mx-auto rounded pt-2 pb-2 pl-5 pr-5" href="https://sharing.ddd-tw.com/2024DDDTWconf_sponsorship_proposal.pdf" target="_blank">
                     企業贊助
                 </a>
             </div>
