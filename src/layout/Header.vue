@@ -51,10 +51,13 @@ const toggleNav = () => (showMenu.value = !showMenu.value);
                         </router-link>
                     </li>
                     <li class="pt-3 pb-3 mr-5">
-                        <a class="font-me pr-3 pl-3 pt-1 pb-1 text-slate-700 text-white rounded bg-sky-500 hover:bg-sky-600"
-                           href="https://www.accupass.com/event/2406080625301381404160" target="_blank">
-                            報名購票
-                        </a>
+                        <router-link class="font-me text-white text-slate-700 hover:text-blue-300" to="/tickets">
+                            購票
+                        </router-link>
+<!--                        <a class="font-me pr-3 pl-3 pt-1 pb-1 text-slate-700 text-white rounded bg-sky-500 hover:bg-sky-600"-->
+<!--                           href="https://www.accupass.com/event/2406080625301381404160" target="_blank">-->
+<!--                            報名購票-->
+<!--                        </a>-->
                     </li>
                 </ul>
             </nav>

@@ -1,5 +1,13 @@
 <template>
     <section class="container mx-auto">
+        <div class="banner-main">
+            <div class="hidden sm:block">
+                <img alt="Banner" src="/images/banner-call-for-speaker.png" />
+            </div>
+            <div class="block sm:hidden">
+                <img alt="Banner" src="/images/banner-mobile-call-for-speaker.png" />
+            </div>
+        </div>
         <div class="text-center p-6 pt-10 pb-10 leading-7">
             <img alt="call-for-proposals" class="mx-auto h-32" src="/images/call-for-proposals.svg" />
             <h2 class="text-4xl mb-5 mt-3 text-center">徵求講者</h2>
