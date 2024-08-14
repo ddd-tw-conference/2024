@@ -29,32 +29,43 @@ const toggleNav = () => (showMenu.value = !showMenu.value);
 
                 <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col md:flex md:flex-row justify-end">
                     <li class="pt-3 pb-3 mr-5">
-                        <router-link class="font-me text-white text-slate-700 hover:text-blue-300" to="/about">
+                        <router-link class="font-me text-white hover:text-blue-300" to="/about">
                             關於我們
                         </router-link>
-
                     </li>
+
                     <li class="pt-3 pb-3 mr-5">
-                        <router-link class="font-me text-white text-slate-700 hover:text-blue-300" to="/call-for-proposals">
-                            徵求講者
+                        <router-link class="font-me text-white hover:text-blue-300" to="/agenda">
+                            議程資訊
+                        </router-link>
+                    </li>
+
+<!--                    <li class="pt-3 pb-3 mr-5">-->
+<!--                        <router-link class="font-me text-white hover:text-blue-300" to="/call-for-proposals">-->
+<!--                            徵求講者-->
+<!--                        </router-link>-->
+<!--                    </li>-->
+                    <li class="pt-3 pb-3 mr-5">
+                        <router-link class="font-me text-white hover:text-blue-300" to="/speakers">
+                            講者資訊
                         </router-link>
                     </li>
 
                     <li class="pt-3 pb-3 mr-5">
-                        <router-link class="font-me text-white text-slate-700 hover:text-blue-300" to="/sponsors">
+                        <router-link class="font-me text-white hover:text-blue-300" to="/sponsors">
                             企業贊助
                         </router-link>
                     </li>
                     <li class="pt-3 pb-3 mr-5">
-                        <router-link class="font-me text-white text-slate-700 hover:text-blue-300" to="/volunteer">
+                        <router-link class="font-me text-white hover:text-blue-300" to="/volunteer">
                             招募志工
                         </router-link>
                     </li>
                     <li class="pt-3 pb-3 mr-5">
-                        <a class="font-me pr-3 pl-3 pt-1 pb-1 text-slate-700 text-white rounded bg-sky-500 hover:bg-sky-600"
-                           href="https://www.accupass.com/event/2406080625301381404160" target="_blank">
-                            報名購票
-                        </a>
+                        <router-link class="font-me text-white hover:text-blue-300" to="/tickets">
+                            購票
+                        </router-link>
+
                     </li>
                 </ul>
             </nav>

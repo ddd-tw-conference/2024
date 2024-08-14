@@ -7,10 +7,13 @@ const routes = [
     {path: '', name: 'home', component: Home},
     {path: '/about', name: 'about', component: About},
     {path: '/volunteer', component: () => import('../views/volunteer.vue')},
+    {path: '/agenda', component: () => import('../views/agenda.vue')},
     {path: '/call-for-proposals', component: () => import('../views/call-for-proposals.vue')},
     {
         path: '/sponsors', component: () => import('../views/sponsors.vue'),
     },
+    {path: '/tickets', component: () => import('../views/tickets.vue')},
+    {path: '/speakers', component: () => import('../views/speakers.vue')},
 ];
 
 const router = createRouter({
