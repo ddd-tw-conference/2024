@@ -56,13 +56,13 @@
                 </tr>
 
                 <tr>
-                    <th class="pin text-xl font-semibold bg-sky-950 text-white">10:15-10:30</th>
+                    <th class="pin text-xl font-semibold bg-sky-950 text-white">10:15 - 10:30</th>
                     <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="4" style="vertical-align: middle;">
                         Break
                     </td>
                 </tr>
                 <tr>
-                    <th class="pin text-xl font-semibold bg-sky-950 text-white">11:30-12:15</th>
+                    <th class="pin text-xl font-semibold bg-sky-950 text-white">11:30 - 12:15<p class="text-sm mt-2">45 Minutes</p></th>
                     <td class="bg-cyan-950/20 font-semibold text-amber-300" style="vertical-align: middle;">
                         開發者的歹路<br>陳明正
                     </td>
@@ -76,13 +76,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <th class="pin text-xl font-semibold bg-sky-950 text-white">12:15-13:30</th>
+                    <th class="pin text-xl font-semibold bg-sky-950 text-white">12:15 - 13:30</th>
                     <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="4" style="vertical-align: middle;">
                         Break
                     </td>
                 </tr>
                 <tr>
-                    <th class="pin text-xl font-semibold bg-sky-950 text-white">13:30-14:15</th>
+                    <th class="pin text-xl font-semibold bg-sky-950 text-white">13:30 - 14:15<p class="text-sm mt-2">45 Minutes</p></th>
                     <td class="bg-cyan-950/20 font-semibold text-amber-300" style="vertical-align: middle;">
                         面對 Legacy Code, 你有哪些選擇?<br>Kuma
                     </td>
@@ -97,7 +97,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th class="pin text-xl font-semibold bg-sky-950 text-white">14:15-14:30</th>
+                    <th class="pin text-xl font-semibold bg-sky-950 text-white">14:15 - 14:30<p class="text-sm mt-2">15 Minutes</p></th>
                     <td class="bg-cyan-950/20 font-semibold text-amber-300" style="vertical-align: middle;">
                         領域驅動設計戰術內部物件的協作方式<br>神Q超人
                     </td>
@@ -114,7 +114,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th class="pin text-xl font-semibold bg-sky-950 text-white">15:45-16:30</th>
+                    <th class="pin text-xl font-semibold bg-sky-950 text-white">15:45 - 16:30<p class="text-sm mt-2">45 Minutes</p></th>
                     <td class="bg-cyan-950/20 font-semibold text-amber-300" style="vertical-align: middle;">
                         From EventStorming to Event Store passing through BDD<br>Alberto Acerbis
                     </td>
