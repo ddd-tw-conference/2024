@@ -7,6 +7,7 @@ const routes = [
     {path: '', name: 'home', component: Home},
     {path: '/about', name: 'about', component: About},
     {path: '/volunteer', component: () => import('../views/volunteer.vue')},
+    {path: '/agenda', component: () => import('../views/agenda.vue')},
     {path: '/call-for-proposals', component: () => import('../views/call-for-proposals.vue')},
     {
         path: '/sponsors', component: () => import('../views/sponsors.vue'),
