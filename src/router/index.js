@@ -13,6 +13,7 @@ const routes = [
         path: '/sponsors', component: () => import('../views/sponsors.vue'),
     },
     {path: '/tickets', component: () => import('../views/tickets.vue')},
+    {path: '/speakers', component: () => import('../views/speakers.vue')},
 ];
 
 const router = createRouter({
