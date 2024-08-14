@@ -9,33 +9,42 @@
             </div>
         </div>
         <div class="py-10 leading-7">
-            <div>
-                <h2 class="text-xl my-5">領域驅動設計台灣 2024 年會 - DDDesign Taiwan Conference 2024</h2>
-                <div class="sm:ml-10 mb-10 leading-7 text-center">
-                    <p class="mb-6">
-                        DDDTW 社群致力於推廣 Domain-Driven Design
-                        此一風行全球的方法論在臺灣扎根。六年來，我們已經於全臺舉辦了上百場活動，吸引上千人來理解甚至實踐
-                        DDD。
-                    </p>
-                    <p class="mb-6">
-                        台灣領域驅動設計社群將於 2024/09/13(五)
-                        舉辦第四屆「臺灣領域驅動設計年會」，今年年會的主題為：系統設計與社會技術年會（System
-                        Design & Socio-technical Conference）。 圍繞「遺留工作負載（legacy
-                        workloads）」和現代應用程式的演變，邀請大家共同探討這些工作負載在當今商業環境中所帶來的挑戰和機遇。
-                        討論遺留工作負載的演進，以及如何應對它們的變化，並探索系統設計的複雜性，重點考慮社會技術因素對軟體開發決策和執行的影響。期待深入探討企業決策者和一線執行團隊之間的合作方式，以實現系統設計和開發的目標。
-                        歡迎贊助我們，讓技術帶領業務前進！
-                    </p>
+            <!--            <div class="conference">-->
+            <h2 class="text-2xl font-bold mb-4">領域驅動設計台灣 2024 年會 - DDDesign Taiwan Conference 2024</h2>
+            <p class="mb-2">
+                <span class="mr-2">🕒</span> 2024.09.13 (五) 09:00 - 17:00 (GMT+8)
+            </p>
+            <p class="mb-6">
+                <span class="mr-2">📍</span> 台灣台北市 100 中正區徐州路2號 (台大醫院國際會議中心)
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <ticket-card :active="false" button-text="已結束" price="2,000" ticket-type="早鳥票" title="2024/07/02 - 07/31" />
+                <ticket-card :active="true" button-text="立即購票" price="2,500" ticket-type="一般票" title="2024/08/01 - 09/04" />
+                <ticket-card :active="false" button-text="尚未開放" price="3,000" ticket-type="晚鳥票" title="2024/09/05 - 09/12" />
                 </div>
 
-            </div>
-            <div class="text-center pt-30 pb-10">
-                <a class="bg-cyan-500 hover:bg-cyan-600 mx-auto rounded pt-2 pb-2 pl-5 pr-5"
-                   href="https://sharing.ddd-tw.com/2024DDDTWconf_sponsorship_proposal.pdf" target="_blank">
-                    企業贊助
-                </a>
+            <h2 class="text-2xl font-semibold mb-4">年會工作坊 - DDD Workshop</h2>
+            <p class="mb-2">
+                <span class="mr-2">🕒</span> 2024.09.13 (五) 上午、下午場，共兩場主題
+            </p>
+            <p class="mb-2">
+                <span class="mr-2">📍</span> 台灣台北市 100 中正區徐州路2號 (台大醫院國際會議中心)
+            </p>
+            <p class="text-sm italic mb-4">* 請先購買年會票券，方可加購工作坊票券</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <ticket-card :active="true" button-text="立即購票" price="800" ticket-type="重構工作坊" title="售完為止" />
+                <ticket-card :active="true" button-text="立即購票" price="800" ticket-type="應用架構設計工作坊"
+                             title="售完為止" />
+
             </div>
         </div>
     </section>
 </template>
+
 <script lang="ts" setup>
+import TicketCard from '../components/ticket-card.vue'
 </script>
+
+<style scoped>
+</style>
