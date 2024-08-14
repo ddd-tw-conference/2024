@@ -111,7 +111,7 @@
         </li>
       </ul>
       <div class="footer__copyright">
-        Copyright © 2023 Domain Driven Design Taiwan.
+        Copyright © 2024 Domain Driven Design Taiwan.
       </div>
     </div>
   </footer>
