@@ -19,7 +19,7 @@
                     <th class="text-3xl font-semibold text-amber-300 bg-cyan-300/10 min-w-[20%]">A</th>
                     <th class="text-3xl font-semibold text-lime-300 bg-lime-300/10 min-w-[20%]">B</th>
                     <th class="text-3xl font-semibold text-cyan-500 bg-cyan-500/10 min-w-[20%]">C</th>
-                    <th class="text-3xl font-semibold text-cyan-500 bg-cyan-500/10 min-w-[20%]">W</th>
+                    <th class="text-3xl font-semibold text-fuchsia-500 bg-cyan-500/10 min-w-[20%]">W</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -71,13 +71,15 @@
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
                     </td>
-                    <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
-                        工作坊
+                    <td class="bg-cyan-950/20 font-semibold text-fuchsia-500"
+                        rowspan="3"
+                        style="vertical-align: middle;">
+                        重構工作坊
                     </td>
                 </tr>
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">12:15 - 13:30</th>
-                    <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="4" style="vertical-align: middle;">
+                    <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="3" style="vertical-align: middle;">
                         Break
                     </td>
                 </tr>
@@ -91,9 +93,6 @@
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
                         原來開局就一身債！從軟體邊界探索技術債的形成與團隊拓樸的設計<br>Augustion
-                    </td>
-                    <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
-                        工作坊
                     </td>
                 </tr>
                 <tr>
@@ -115,13 +114,14 @@
                         Fostering Socio-Technical Harmony in DDD: Ensuring Effective Collaboration for Evolving Problem Domains<br>Kim Kao &
                         Stephen Tung
                     </td>
-                    <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
-                        工作坊
+                    <td class="bg-cyan-950/20 font-semibold text-fuchsia-500" rowspan="3"
+                        style="vertical-align: middle;">
+                        應用架構設計工作坊
                     </td>
                 </tr>
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">15:15 - 15:45<p class="text-sm mt-2">30 Minutes</p></th>
-                    <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="4" style="vertical-align: middle;">
+                    <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="3" style="vertical-align: middle;">
                         Break & 招商時間
                     </td>
                 </tr>
@@ -135,9 +135,6 @@
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
                         使用者研究該如何理解質性與量化的定位<br>Nor
-                    </td>
-                    <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
-                        工作坊
                     </td>
                 </tr>
                 </tbody>
