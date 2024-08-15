@@ -146,7 +146,7 @@
 
 <script>
 import agendaData from '../data/agendaData';
-import speakersData from '../data/speakersData';
+import speakersData from '../data/speakers-data.ts';
 
 export default {
     data() {

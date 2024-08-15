@@ -4,7 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import urlJoin from "url-join";
 import agendas from "../src/data/agendaData";
-import speakers from "../src/data/speakersData";
+import speakers from "../src/data/speakers-data";
 
 const baseUrl = "https://conference.ddd-tw.com/2023";
 
