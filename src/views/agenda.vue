@@ -97,7 +97,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <th class="pin text-xl font-semibold bg-sky-950 text-white">14:15 - 14:30<p class="text-sm mt-2">15 Minutes</p></th>
+                    <th class="pin text-xl font-semibold bg-sky-950 text-white">14:15 - 14:30</th>
+                    <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="4" style="vertical-align: middle;">
+                        Break
+                    </td>
+                </tr>
+                <tr>
+                    <th class="pin text-xl font-semibold bg-sky-950 text-white">14:30 - 15:15<p class="text-sm mt-2">45 Minutes</p></th>
                     <td class="bg-cyan-950/20 font-semibold text-amber-300" style="vertical-align: middle;">
                         領域驅動設計戰術內部物件的協作方式<br>神Q超人
                     </td>
@@ -111,6 +117,12 @@
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
                         工作坊
+                    </td>
+                </tr>
+                <tr>
+                    <th class="pin text-xl font-semibold bg-sky-950 text-white">15:15 - 15:45<p class="text-sm mt-2">30 Minutes</p></th>
+                    <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="4" style="vertical-align: middle;">
+                        Break & 招商時間
                     </td>
                 </tr>
                 <tr>
