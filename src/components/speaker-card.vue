@@ -1,7 +1,9 @@
 <template>
     <div class="text-white rounded-lg p-4" style="border: 2px solid #425AE5">
         <div class="w-60 h-60 mx-auto">
-            <img :alt="speaker.name" :src="getImagePath(speaker.image)" class="rounded-2xl">
+            <router-link :to="{ name: 'speaker', params: { id: speaker.id } }">
+                <img :alt="speaker.name" :src="getImagePath(speaker.image)" class="rounded-2xl">
+            </router-link>
         </div>
         <div class="text-center mt-4">
             <p class="font-bold text-lg">{{ speaker.name }}</p>
