@@ -92,7 +92,7 @@
                         那年走過的彎路<br>石其生
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
-                        原來開局就一身債！從軟體邊界探索技術債的形成與團隊拓樸的設計<br>Augustion
+                        原來開局就一身債！從軟體邊界探索技術債的形成與團隊拓樸的設計<br>Augustin
                     </td>
                 </tr>
                 <tr>
