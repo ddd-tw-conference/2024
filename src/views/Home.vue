@@ -90,7 +90,7 @@
         </div>
 
         <!-- 志工招募 -->
-        <div class="region-bg-2">
+        <div class="region-bg-2" v-if='isVolunteer'>
 
             <div class="text-center p-6 pt-10 pb-10 leading-7">
                 <img alt="Volunteer" class="mx-auto" src="/images/volunteer.svg" />
@@ -110,6 +110,9 @@
     </section>
 </template>
 <script lang="ts" setup>
+
+import { ref } from 'vue';
+const isVolunteer= ref(false);
 
 </script>
 

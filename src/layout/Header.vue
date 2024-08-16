@@ -3,6 +3,9 @@ import {ref} from 'vue';
 
 let showMenu = ref(false);
 const toggleNav = () => (showMenu.value = !showMenu.value);
+
+const isVolunteer = ref(false);
+
 </script>
 <template>
     <header class="sticky top-0 z-20 bg-gray-950/70 border-b-2 border-b-blue-800/30 backdrop-blur text-white pt-3 pb-3">
@@ -45,6 +48,7 @@ const toggleNav = () => (showMenu.value = !showMenu.value);
 <!--                            徵求講者-->
 <!--                        </router-link>-->
 <!--                    </li>-->
+
                     <li class="pt-3 pb-3 mr-5">
                         <router-link class="font-me text-white hover:text-blue-300" to="/speakers">
                             講者資訊
@@ -56,7 +60,7 @@ const toggleNav = () => (showMenu.value = !showMenu.value);
                             企業贊助
                         </router-link>
                     </li>
-                    <li class="pt-3 pb-3 mr-5">
+                    <li class="pt-3 pb-3 mr-5" v-if="isVolunteer">
                         <router-link class="font-me text-white hover:text-blue-300" to="/volunteer">
                             招募志工
                         </router-link>
