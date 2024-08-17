@@ -64,17 +64,23 @@
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">11:30 - 12:15<p class="text-sm mt-2">45 Minutes</p></th>
                     <td class="bg-cyan-950/20 font-semibold text-amber-300" style="vertical-align: middle;">
-                        開發者的歹路<br>陳明正
+                        <router-link :to="{ name: 'session', params: { id: 'A1' } }">
+                            開發者的歹路
+                        </router-link>
+                        <br>陳明正
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-lime-300" style="vertical-align: middle;">
-                        Domain-Driven Transformation - how to improve the structure of legacy systems<br>Carola Lilienthal
+                        <router-link :to="{ name: 'session', params: { id: 'B1' } }">
+                            Domain-Driven Transformation - how to improve the structure of legacy systems
+                        </router-link>
+                        <br>Carola Lilienthal
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-fuchsia-500"
                         rowspan="3"
                         style="vertical-align: middle;">
-                        重構工作坊
+                        重構工作坊<br>Bruce
                     </td>
                 </tr>
                 <tr>
@@ -86,13 +92,22 @@
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">13:30 - 14:15<p class="text-sm mt-2">45 Minutes</p></th>
                     <td class="bg-cyan-950/20 font-semibold text-amber-300" style="vertical-align: middle;">
-                        面對 Legacy Code, 你有哪些選擇?<br>Kuma
+                        <router-link :to="{ name: 'session', params: { id: 'A2' } }">
+                            面對 Legacy Code, 你有哪些選擇?
+                        </router-link>
+                        <br>Kuma
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-lime-300" style="vertical-align: middle;">
-                        那年走過的彎路<br>石其生
+                        <!--                        <router-link :to="{ name: 'session', params: { id: 'B2' } }">-->
+                        那年走過的彎路
+                        <!--                        </router-link>-->
+                        <br>石其生
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
-                        原來開局就一身債！從軟體邊界探索技術債的形成與團隊拓樸的設計<br>Augustin
+                        <router-link :to="{ name: 'session', params: { id: 'C2' } }">
+                            原來開局就一身債！從軟體邊界探索技術債的形成與團隊拓樸的設計
+                        </router-link>
+                        <br>Augustin
                     </td>
                 </tr>
                 <tr>
@@ -107,16 +122,21 @@
                         領域驅動設計戰術內部物件的協作方式<br>神Q超人
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-lime-300" style="vertical-align: middle;">
-                        Domain Storytelling introduction<br>Micheal
+                        <router-link :to="{ name: 'session', params: { id: 'B3' } }">
+                            Domain Storytelling introduction
+                        </router-link>
+                        <br>Micheal
                     </td>
 
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
-                        Fostering Socio-Technical Harmony in DDD: Ensuring Effective Collaboration for Evolving Problem Domains<br>Kim Kao &
-                        Stephen Tung
+                        <router-link :to="{ name: 'session', params: { id: 'C3' } }">
+                            Fostering Socio-Technical Harmony in DDD: Ensuring Effective Collaboration for Evolving Problem Domains
+                        </router-link>
+                        <br>Kim Kao & Stephen Tung
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-fuchsia-500" rowspan="3"
                         style="vertical-align: middle;">
-                        應用架構設計工作坊
+                        應用架構設計工作坊<br>Arthur
                     </td>
                 </tr>
                 <tr>
@@ -128,13 +148,19 @@
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">15:45 - 16:30<p class="text-sm mt-2">45 Minutes</p></th>
                     <td class="bg-cyan-950/20 font-semibold text-amber-300" style="vertical-align: middle;">
-                        From EventStorming to Event Store passing through BDD<br>Alberto Acerbis
+                        <router-link :to="{ name: 'session', params: { id: 'A4' } }">
+                            From EventStorming to Event Store passing through BDD
+                        </router-link>
+                        <br>Alberto Acerbis
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-lime-300" style="vertical-align: middle;">
                         在新專案導入 DDD 的經驗談<br>Fong
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
-                        使用者研究該如何理解質性與量化的定位<br>Nor
+                        <router-link :to="{ name: 'session', params: { id: 'C4' } }">
+                            使用者研究該如何理解質性與量化的定位
+                        </router-link>
+                        <br>Nor
                     </td>
                 </tr>
                 </tbody>
@@ -145,7 +171,7 @@
 </template>
 
 <script>
-import agendaData from '../data/agendaData';
+import agendaData from '../data/agenda-data.ts';
 import speakersData from '../data/speakers-data.ts';
 
 export default {
@@ -159,10 +185,6 @@ export default {
 </script>
 
 <style scoped>
-.primary {
-    overflow: auto;
-    scroll-snap-type: both mandatory;
-}
 
 table {
     border-collapse: collapse;

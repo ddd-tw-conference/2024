@@ -3,7 +3,7 @@ import fs from "fs-extra";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import urlJoin from "url-join";
-import agendas from "../src/data/agendaData";
+import agendas from "../src/data/agenda-data";
 import speakers from "../src/data/speakers-data";
 
 const baseUrl = "https://conference.ddd-tw.com/2023";
