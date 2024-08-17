@@ -12,6 +12,20 @@ const agendaData: sessionModel[] = [
         description: ['一些經歷過的案例與解決(或未能解決的原因)']
     },
     {
+        id: 'B1',
+        topic: 'Domain-Driven Transformation - how to improve the structure of legacy systems',
+        time: '11:30 - 12:15',
+        session: 'B',
+        speaker: ['Carola Lilienthal'],
+        level: '入門',
+        description: ['Today, we know how to start a new project on a greenfield site and how to build good architecture. But most of us work in projects that have been around for a long time and whose architecture is (to put it mildly) not all that nice. ""Monolith"" and ""Big Ball of Mud"" are the unflattering terms for such systems.',
+            'In this talk, I will introduce you to Domain-Driven Transformation, a methodology, which Henning Schwentner and I have developed over the last few years from our experience of improving legacy systems. Four steps lead from the evaluation of the current state to the domain-oriented vision of the architecture. We present a catalog of refactorings that help to heal BBOM(Big Ball of Mud) architectures, anaemic domain models and poorly organized teams. Finally, I discuss our thoughts on the influence of certain domain properties on decomposition into subdomains.',
+            '今天，我們知道如何在全新的環境上啟動一個新專案以及如何建構良好的架構。但我們大多數人所從事的專案已經存在很長時間了，而且其架構（溫和地說）並不是那麼好。 「單體式」和「大泥球」是此類系統的不雅稱。',
+            '在本次演講中，我將向您介紹領域驅動轉型，這是我和 Henning Schwentner 在過去幾年中根據改進遺留系統的經驗開發的一種方法。從當前狀態的評估到架構的面向領域的願景有四個步驟。我們提供了一系列重構，有助於修復 大泥球(BBOM) 架構、貧乏的領域模型和組織不良的團隊。最後，我討論了我們對某些域屬性對分解為子域的影響的想法。',
+            'Legacy software is a huge problem in many organizations because development and maintenance is slowed down up to completely stopped. With this method you will be able to improve the situation of your development teams. ',
+            '遺留軟體在許多組織中都是一個大問題，因為開發和維護速度減慢甚至完全停止。透過這種方法，您將能夠改善開發團隊的狀況。']
+    },
+    {
         id: 'A2',
         topic: '面對 Legacy Code, 你有哪些選擇?',
         time: '09:00 - 09:45',
