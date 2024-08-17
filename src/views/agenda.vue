@@ -145,7 +145,7 @@
 </template>
 
 <script>
-import agendaData from '../data/agendaData';
+import agendaData from '../data/agenda-data.ts';
 import speakersData from '../data/speakers-data.ts';
 
 export default {
@@ -159,10 +159,6 @@ export default {
 </script>
 
 <style scoped>
-.primary {
-    overflow: auto;
-    scroll-snap-type: both mandatory;
-}
 
 table {
     border-collapse: collapse;
