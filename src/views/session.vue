@@ -43,7 +43,7 @@
             <div class="flex justify-center">
                 <!-- 回到上一個畫面 -->
                 <button class="hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full border-2 border-white"
-                        @click="this.$router.go(-1)">
+                        @click="goBack">
                         返回
                 </button>
             </div>
@@ -56,21 +56,17 @@
 
 import agendaData from "@/data/agenda-data";
 import { sessionModel } from "@/models/sessionModel";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 
 // 取得 router 的參數
-const router = useRoute();
-const id = router.params.id;
-
-console.log(id);
-console.log(agendaData);
+const route = useRoute();
+const id = route.params.id;
 const session: sessionModel = agendaData.find(s => s.id == id);
 
-console.log(session);
-
-const getImagePath = (image) => {
-    return new URL(`../assets/${ image }`, import.meta.url).href;
-};
+const router = useRouter();
+const goBack = () => {
+    router.back();
+}
 </script>
 
 <style scoped>

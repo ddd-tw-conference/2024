@@ -30,7 +30,7 @@
 
                 <div class="flex justify-center">
                     <button class="hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full border-2 border-white"
-                            @click="this.$router.go(-1)">
+                            @click="goBack">
                         返回
                     </button>
                 </div>
@@ -44,16 +44,21 @@
 
 import speakersData from "@/data/speakers-data";
 import { speakerModel } from "@/models/speakerModel";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 
 // 取得 router 的參數
-const router = useRoute();
-const speakerId = router.params.id;
+const route = useRoute();
+const speakerId = route.params.id;
 
 const speaker: speakerModel = speakersData.find(s => s.id == speakerId);
 const getImagePath = (image) => {
     return new URL(`../assets/${ image }`, import.meta.url).href;
 };
+
+const router = useRouter();
+const goBack = () => {
+    router.back();
+}
 </script>
 
 <style scoped>
