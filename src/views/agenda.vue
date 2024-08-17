@@ -123,7 +123,7 @@
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-lime-300" style="vertical-align: middle;">
                         <router-link :to="{ name: 'session', params: { id: 'B3' } }">
-                            Domain Storytelling introduction
+                            初探領域故事化（Domain Storytelling）—領域驅動的產品價值需求與分析
                         </router-link>
                         <br>Micheal
                     </td>

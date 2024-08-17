@@ -85,7 +85,7 @@ const agendaData: sessionModel[] = [
     },
     {
         id: 'B3',
-        topic: 'Domain Storytelling introduction',
+        topic: '初探領域故事化（Domain Storytelling）—領域驅動的產品價值需求與分析',
         time: '14:30 - 15:15',
         session: 'B',
         speaker: ['Micheal'],
