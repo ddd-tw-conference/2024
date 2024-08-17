@@ -64,7 +64,10 @@ const agendaData: sessionModel[] = [
         session: 'A',
         speaker: ['Alberto Acerbis'],
         level: '入門',
-        description: []
+        description: ['This is a kind of "live coding"; during the talk I\'ll show a lot of code to demonstrate that is possible transform an EventStorming session in code, and maintain your code testable even using DomainEvents. The last year I presented a very similar talk at DDD Europe, as workshop, and it has been a success.',
+            '這是一種「即時編碼」；在演講期間，我會展示大量程式碼，以證明將 EventStorming 會議內容轉換成程式碼是可能的，即使使用 DomainEvents 也能保持程式碼的可測試性。去年，我在 DDD Europe 進行了一場非常相似的工作坊，並獲得了成功。',
+            'Participants at this conference will learn how it is possible to create comprehensive tests for both developers and stackholders to include in their pipelines starting from EventStorming. In a few words how to use the UbiquitousLanguage within your codebase.',
+            '參加這場研討會的與會者將學習如何從 EventStorming 開始，為開發人員和利害關係人創建全面的測試，並將這些測試納入他們的管道中。簡而言之，就是如何在你的程式碼庫中使用 Ubiquitous Language。']
     },
     {
         id: 'B3',

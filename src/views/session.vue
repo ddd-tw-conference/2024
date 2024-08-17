@@ -41,10 +41,10 @@
             </div>
 
             <div class="flex justify-center">
-                <button class="hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full border-2 border-white">
-                    <router-link class="text-white" to="/speakers">
+                <!-- 回到上一個畫面 -->
+                <button class="hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full border-2 border-white"
+                        @click="this.$router.go(-1)">
                         返回
-                    </router-link>
                 </button>
             </div>
         </div>

@@ -19,18 +19,19 @@
                         <div class="mb-6">
                             <h3 class="text-2xl font-bold mb-4">講座</h3>
                             <div class="flex items-center">
-                                <span class="text-blue-200 text-xl flex-grow">{{ speaker.epic }}</span>
-                                <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
+                                ▶︎<router-link :to="{ name: 'session', params: { id: speaker.sessionId } }"
+                                             class="text-blue-200 mx-2">
+                                    {{ speaker.epic }}
+                                </router-link>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="flex justify-center">
-                    <button class="hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full border-2 border-white">
-                        <router-link to="/speakers" class="text-white">
-                            返回
-                        </router-link>
+                    <button class="hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full border-2 border-white"
+                            @click="this.$router.go(-1)">
+                        返回
                     </button>
                 </div>
             </div>
