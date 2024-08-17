@@ -17,12 +17,10 @@ const routes = [
 ];
 
 const router = createRouter({
-    mode: 'history',
     history: createWebHistory('/2024/'),
     routes,
     scrollBehavior(to, from, savedPosition) {
         if (to.hash) {
-            console.log(to.hash);
             return {
                 selector: to.hash
             }
