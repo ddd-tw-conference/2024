@@ -8,8 +8,15 @@
                 <img alt="Banner" src="/images/banner-mobile-agenda.png" />
             </div>
         </div>
-        <h2 class="text-3xl mb-3 mt-3">實體講座</h2>
-        <span class="text-yellow-300">* 講座分為：Keynotes、講座及工作坊共三類型，請注意。</span>
+      <div class="mx-5">
+
+        <div class="my-3">
+          <h2 class="mb-3 mt-3">注意事項</h2>
+          <ul>
+            <li>活動分為：Keynotes、講座及工作坊共三類型。</li>
+            <li>使用手機版請左右滑動，查看議程表</li>
+          </ul>
+        </div>
 
         <div>
             <table class="min-w-full border-collapse border border-gray-300">
@@ -166,6 +173,7 @@
                 </tbody>
             </table>
         </div>
+      </div>
 
     </section>
 </template>
@@ -189,7 +197,7 @@ export default {
 table {
     border-collapse: collapse;
     border: 0;
-    width: 100%;
+    width: 90%;
 }
 
 th,

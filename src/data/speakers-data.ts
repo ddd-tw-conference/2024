@@ -1,4 +1,4 @@
-import { speakerModel } from "../models/speakerModel";
+import {speakerModel} from "../models/speakerModel";
 
 const speakersData: speakerModel[] = [
     {
@@ -101,6 +101,63 @@ const speakersData: speakerModel[] = [
         sessionId: 'B3',
         website: ''
     },
+    {
+        id: 'Q',
+        name: '神 Q 超人',
+        image: 'speaker-Q.png',
+        epic: '領域驅動設計戰術內部物件的協作方式',
+        bio: ['Hi，我是神 Q 超人，是相信努力不會騙人的前端工程師，喜歡學習各種程式設計的思維，然後在學習中思考，實作中變強！'],
+        intro: ['Hi，我是神 Q 超人，是相信努力不會騙人的前端工程師，喜歡學習各種程式設計的思維，然後在學習中思考，實作中變強！',
+            '八年經驗的工程師，前三年在 ASP.NET 維護 ERP 系統，後五年至今在前端領域中打滾，主要技術線為 JavaScript 和 React、Vue 等前端框架。',
+            '平常的興趣是看書、玩滑板和吹口琴，喜歡的動畫是數碼寶貝，最近在三月預購的 25 週年版的神聖計畫終於要出貨了，我非常興奮。'],
+        sessionId: 'A3',
+        website: ''
+    },
+    {
+        id: 'George',
+        name: '石其生',
+        image: 'speaker-George.jpg',
+        epic: '那年走過的彎路',
+        bio: ['從事軟體開發 30 餘年，台灣科技大學資訊工程系博士，專注於 - 資料庫應用程式, 嵌入式系統, 人工智慧系統'],
+        intro: ['從事軟體開發 30 餘年，台灣科技大學資訊工程系博士，專注於 - 資料庫應用程式, 嵌入式系統, 人工智慧系統',
+            'DOS 文書編輯器, PE3, DW3 協力作者之一, 海軍安訊九號電腦無線通訊系統作者之一, 曾參與多達30 個以上的資料庫應用系統開發, 熟悉各廠牌資料庫, 近年來從事於嵌入式系統相關行業, 現職則為連鎖藥局資訊部經理.'],
+        sessionId: 'B2',
+        website: ''
+    },
+    {
+        id: 'Carola',
+        name: 'Carola Lilienthal',
+        image: 'speaker-Carola-Lilienthal.jpg',
+        epic: 'Domain-Driven Transformation - how to improve the structure of legacy systems',
+        bio: ['Carola Lilienthal 博士是 WPS - Workplace Solutions 的軟體架構師，近 20 年來一直與她的團隊根據領域驅動設計的原則開發軟體架構。她在《永續軟體架構》和《領域驅動轉型》兩本書中分享了她的知識。'],
+        intro: ['Carola Lilienthal 博士是 WPS - Workplace Solutions 的軟體架構師，近 20 年來一直與她的團隊根據領域驅動設計的原則開發軟體架構。她在《永續軟體架構》和《領域驅動轉型》兩本書中分享了她的知識。'],
+        sessionId: 'B1',
+        website: ''
+    },
+    {
+        id: 'Fong',
+        name: 'Fong',
+        image: 'speaker-Fong.png',
+        epic: '在新專案套入 DDD 的經驗談',
+        bio: ['目前在 Appier 擔任後端工程師。同時也是 DDDTW 社群的核心志工與講師。曾經參與 IT 鐵人賽撰寫過兩個系列文章：GraphQL 與 Domain-Driven Design 並獲得佳績。'],
+        intro: ['目前在 Appier 擔任後端工程師。同時也是 DDDTW 社群的核心志工與講師。曾經參與 IT 鐵人賽撰寫過兩個系列文章：GraphQL 與 Domain-Driven Design 並獲得佳績。'],
+        sessionId: 'B4',
+        website: ''
+    },
+    {
+        id: 'Ruddy',
+        name: 'Ruddy Lee',
+        image: 'speaker-Ruddy.png',
+        epic: '開發者體驗 DevX',
+        bio: ['資訊業界的老兵，為資深顧問，因為長期參加各種演講活動大家都稱我為 Ruddy 老師，著有精實開發與看板方法等書，從事研發工作40多年，退休後仍努立推廣開發者體驗。'],
+        intro: ['資訊業界的老兵，為資深顧問，因為長期參加各種演講活動大家都稱我為 Ruddy老師，著有精實開發與看板方法等書，從事研發工作40多年，退休後仍努立推廣開發者體驗。',
+            '◆ 具有超過40年的工程師經歷，擅長敏捷開發，著作有 : 精實開發與看板方法、Windows Azure雲端開發、WF工作流程引擎程式設計、微軟 VSTS 開發實戰等書。',
+            '◆ 為專業的軟體開發顧問、Scrum及看板課程教學的講師。',
+            '◆ 近年來；致力於推廣「開發者體驗」，專注於協助開發團隊與研發工程師的自我成長及實踐敏捷開發。曾擔任過四家資訊公司的研發部經理。',
+            '◆ 為經常往返於二岸的精實佈道師。'],
+        sessionId: 'Keynote',
+        website: ''
+    }
 ];
 
 export default speakersData;

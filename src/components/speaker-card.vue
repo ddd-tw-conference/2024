@@ -1,8 +1,9 @@
 <template>
     <div class="text-white rounded-lg p-4" style="border: 2px solid #425AE5">
-        <div class="w-60 h-60 mx-auto">
+      <div class="w-60 h-60 mx-auto">
             <router-link :to="{ name: 'speaker', params: { id: speaker.id } }">
-                <img :alt="speaker.name" :src="getImagePath(speaker.image)" class="rounded-2xl">
+              <img :alt="speaker.name" :src="getImagePath(speaker.image)"
+                   class="rounded-2xl w-full h-full object-cover">
             </router-link>
         </div>
         <div class="text-center mt-4">
@@ -13,8 +14,8 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps } from 'vue';
-import { speakerModel } from '@/models/speakerModel';
+import {defineProps} from 'vue';
+import {speakerModel} from '@/models/speakerModel';
 
 const props = defineProps<{
     speaker: speakerModel
