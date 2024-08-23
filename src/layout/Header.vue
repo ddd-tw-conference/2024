@@ -37,6 +37,12 @@ const isVolunteer = ref(false);
                         </router-link>
                     </li>
 
+                  <li class="pt-3 pb-3 mr-5">
+                    <router-link class="font-me text-white hover:text-blue-300" to="/rules">
+                      大會守則
+                    </router-link>
+                  </li>
+
                     <li class="pt-3 pb-3 mr-5">
                         <router-link class="font-me text-white hover:text-blue-300" to="/agenda">
                             議程資訊
