@@ -44,27 +44,32 @@
                 </tr>
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">09:30 - 10:15<p class="text-sm mt-2">45 Minutes</p></th>
-                    <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="4" style="vertical-align: middle;">
-                        <h2 class="mb-3 text-xl font-semibold">開發者體驗 DevX</h2>
+                  <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="3" style="vertical-align: middle;">
+                    <h2 class="mb-3 text-xl font-semibold">開發者體驗 DevEX</h2>
                         Ruddy
                     </td>
+                  <td class="bg-cyan-950/20 font-semibold text-fuchsia-500"
+                      rowspan="5"
+                      style="vertical-align: middle;">
+                    重構工作坊<br>Bruce
+                  </td>
                 </tr>
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">10:15 - 10:30</th>
-                    <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="4" style="vertical-align: middle;">
+                  <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="3" style="vertical-align: middle;">
                         Break
                     </td>
                 </tr>
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">10:30 - 11:15<p class="text-sm mt-2">45 Minutes</p></th>
-                    <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="4" style="vertical-align: middle;">
+                  <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="3" style="vertical-align: middle;">
                         <h2 class="mb-3 text-xl font-semibold"> Panel Discussion</h2>
                     </td>
                 </tr>
 
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">10:15 - 10:30</th>
-                    <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="4" style="vertical-align: middle;">
+                  <td class="bg-cyan-950/20 font-semibold text-amber-300" colspan="3" style="vertical-align: middle;">
                         Break
                     </td>
                 </tr>
@@ -83,11 +88,6 @@
                         <br>Carola Lilienthal
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
-                    </td>
-                    <td class="bg-cyan-950/20 font-semibold text-fuchsia-500"
-                        rowspan="3"
-                        style="vertical-align: middle;">
-                        重構工作坊<br>Bruce
                     </td>
                 </tr>
                 <tr>
@@ -116,6 +116,10 @@
                         </router-link>
                         <br>Augustin
                     </td>
+                  <td class="bg-cyan-950/20 font-semibold text-fuchsia-500" rowspan="5"
+                      style="vertical-align: middle;">
+                    應用架構設計工作坊<br>Arthur
+                  </td>
                 </tr>
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">14:15 - 14:30</th>
@@ -141,10 +145,7 @@
                         </router-link>
                         <br>Kim Kao & Stephen Tung
                     </td>
-                    <td class="bg-cyan-950/20 font-semibold text-fuchsia-500" rowspan="3"
-                        style="vertical-align: middle;">
-                        應用架構設計工作坊<br>Arthur
-                    </td>
+
                 </tr>
                 <tr>
                     <th class="pin text-xl font-semibold bg-sky-950 text-white">15:15 - 15:45<p class="text-sm mt-2">30 Minutes</p></th>
