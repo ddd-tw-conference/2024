@@ -88,6 +88,10 @@
                         <br>Carola Lilienthal
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
+                      <router-link :to="{ name: 'session', params: { id: 'C1' } }">
+                        知識精煉：運用社會技術來解決遺留系統中的管理挑戰
+                      </router-link>
+                      <br>James Wang
                     </td>
                 </tr>
                 <tr>
@@ -105,9 +109,9 @@
                         <br>Kuma
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-lime-300" style="vertical-align: middle;">
-                        <!--                        <router-link :to="{ name: 'session', params: { id: 'B2' } }">-->
+                      <router-link :to="{ name: 'session', params: { id: 'B2' } }">
                         那年走過的彎路
-                        <!--                        </router-link>-->
+                      </router-link>
                         <br>石其生
                     </td>
                     <td class="bg-cyan-950/20 font-semibold text-cyan-500" style="vertical-align: middle;">
