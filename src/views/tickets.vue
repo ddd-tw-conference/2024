@@ -21,7 +21,9 @@
                 <ticket-card begin="2024/07/02" end="2024/07/31" price="2,000" ticket-type="早鳥票" />
                 <ticket-card begin="2024/08/01" end="2024/09/04" price="2,500" ticket-type="一般票" />
                 <ticket-card begin="2024/09/05" end="2024/09/12" price="3,000" ticket-type="晚鳥票" />
-                </div>
+                <ticket-card begin="2024/08/26" end="2024/09/12" price="2,375 x 3" ticket-type="三人團體票" />
+                <ticket-card begin="2024/08/26" end="2024/09/12" price="2,250 x 5" ticket-type="五人團體票" />
+            </div>
 
             <h2 class="text-2xl font-semibold mb-4">年會工作坊 - DDD Workshop</h2>
             <p class="mb-2">
