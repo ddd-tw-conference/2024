@@ -23,13 +23,37 @@
 </template>
 
 <script lang="ts" setup>
+import { defineProps, onMounted, ref } from 'vue';
+
 interface Props {
-    title: string;
     ticketType: string;
     price: string;
-    active: Boolean;
-    buttonText: string;
+    begin: string;
+    end: string;
 }
 
 const props = defineProps<Props>();
+
+const buttonText = ref('');
+const active = ref(false);
+const title = `${props.begin} ~ ${props.end}`;
+
+onMounted(() => {
+    const now = new Date();
+
+    const ticketBegin = new Date(props.begin);
+    const ticketEnd = new Date(props.end);
+
+    if (now < ticketBegin) {
+        buttonText.value = '尚未開賣';
+        active.value = false;
+    } else if (now > ticketEnd) {
+        buttonText.value = '已結束';
+        active.value = false;
+    } else {
+        buttonText.value = '立即購票';
+        active.value = true;
+    }
+});
+
 </script>

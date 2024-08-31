@@ -18,9 +18,9 @@
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                <ticket-card :active="false" button-text="已結束" price="2,000" ticket-type="早鳥票" title="2024/07/02 - 07/31" />
-                <ticket-card :active="true" button-text="立即購票" price="2,500" ticket-type="一般票" title="2024/08/01 - 09/04" />
-                <ticket-card :active="false" button-text="尚未開放" price="3,000" ticket-type="晚鳥票" title="2024/09/05 - 09/12" />
+                <ticket-card begin="2024/07/02" end="2024/07/31" price="2,000" ticket-type="早鳥票" />
+                <ticket-card begin="2024/08/01" end="2024/09/04" price="2,500" ticket-type="一般票" />
+                <ticket-card begin="2024/09/05" end="2024/09/12" price="3,000" ticket-type="晚鳥票" />
                 </div>
 
             <h2 class="text-2xl font-semibold mb-4">年會工作坊 - DDD Workshop</h2>
