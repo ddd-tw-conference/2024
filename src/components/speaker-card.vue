@@ -14,8 +14,8 @@
 </template>
 
 <script lang="ts" setup>
-import {defineProps} from 'vue';
-import {speakerModel} from '@/models/speakerModel';
+import { defineProps } from 'vue';
+import { speakerModel } from '@/models/speakerModel';
 
 const props = defineProps<{
     speaker: speakerModel
