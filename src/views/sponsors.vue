@@ -25,7 +25,7 @@
                     <span class="text-3xl">黃金贊助商</span>
                     <img alt="ICON of golds sponsors" src="/images/golds-sponsors.svg" />
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div class="flex justify-center gap-4 mb-4">
                     <sponsor-card v-for="sponsor in goldSponsors" :sponsor="sponsor" />
                 </div>
             </div>
@@ -35,7 +35,7 @@
                     <span class="text-3xl">銀級贊助商</span>
                     <img alt="ICON of silver sponsors" src="/images/silver-sponsors.svg" />
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div class="flex justify-center gap-4 mb-4">
                     <sponsor-card v-for="sponsor in silverSponsors" :sponsor="sponsor" />
                 </div>
             </div>
@@ -45,7 +45,7 @@
                     <span class="text-3xl">特別贊助</span>
                     <img alt="ICON of special sponsors" src="/images/special-sponsors.svg" />
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div class="flex justify-center gap-4 mb-4">
                     <sponsor-card v-for="sponsor in specialSponsors" :sponsor="sponsor" />
                 </div>
             </div>

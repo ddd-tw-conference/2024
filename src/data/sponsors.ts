@@ -1,4 +1,5 @@
 export interface sponsorModel {
+    id: string;
     name: string;
     level: string;
     image: string;
@@ -6,8 +7,15 @@ export interface sponsorModel {
     recruitment?: string;
 }
 
+export interface recruitmentModel {
+    description: string;
+    image: string;
+    link: string;
+}
+
 const sponsorsData: sponsorModel[] = [
     {
+        id: 'Fable',
         name: 'Fable',
         level: 'Sliver',
         image: 'sponsor-fable.jpg',
@@ -15,6 +23,7 @@ const sponsorsData: sponsorModel[] = [
             'fable 寓意科技成立於 2012 年，致力於成為新型態 IT 顧問公司。提供技術顧問服務和軟體開發管理服務，有效地運用外包技術資源，打造軟體產品服務，近年更以企業內程序化管理以及 AI 應用為主要議題，為企業打造更高效與降低營運費用的流程管理。']
     },
     {
+        id: 'Jetbrains',
         name: 'Jetbrains',
         level: 'Special',
         image: 'sponsor-jetbrains.png',
@@ -23,6 +32,7 @@ const sponsorsData: sponsorModel[] = [
             '目前全球已有超過 800 萬使用者、225 多個國家信任我們的產品。']
     },
     {
+        id: 'EventStore',
         name: 'Event Store',
         level: 'Sliver',
         image: 'sponsor-eventstore.png',
@@ -35,6 +45,7 @@ const sponsorsData: sponsorModel[] = [
         ]
     },
     {
+        id: 'Athemaster',
         name: '炬識科技',
         level: 'Gold',
         image: 'sponsor-Athemaster.jpeg',
@@ -42,9 +53,14 @@ const sponsorsData: sponsorModel[] = [
             '炬識科技成立於 2015 年，為台灣 Data & AI 系統整合與顧問服務領導品牌，以資料增益產業服務價值，透過資料產品化思維與資料管理方法論，發展資料驅動的企業決策框架，最大化資料的商業價值，提供兼具技術與顧問的全方位服務，擘畫產業數位轉型策略，激發企業成長動能。',
             '炬識科技專注 Data & AI 企業服務市場，協助客戶發展人與 AI 協作的企業級營運環境，與客戶攜手實現資料驅動的商業服務，維持 AI 時代下的競爭力。'
         ],
-        recruitment: 'https://reurl.cc/QEZQdo'
+        recruitment: {
+            description: '炬識科技誠摯邀請您加入我們的團隊，一同打造更美好的未來！Welcome to Owl’s Nest: Exploring Athemaster’s Wisdom Hub',
+            image: 'sponsor-Athemaster-recruitment.jpg',
+            link: 'https://reurl.cc/QEZQdo'
+        }
     },
     {
+        id: 'tenlong',
         name: '天瓏圖書',
         level: 'Special',
         image: 'sponsor-tenlong.jpg',
@@ -55,6 +71,7 @@ const sponsorsData: sponsorModel[] = [
         ]
     },
     {
+        id: 'drmaster',
         name: '博碩文化出版社',
         level: 'Special',
         image: 'sponsor-drmaster.jpg',
