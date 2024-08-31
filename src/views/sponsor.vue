@@ -20,8 +20,16 @@
 
                 <div v-if="sponsor.recruitment" class="my-6">
                     <h3 class="text-2xl font-bold mb-4">徵才資訊</h3>
-                    <p>{{sponsor.recruitment.description}}</p>
-                    <a :href="sponsor.recruitment.link" target="_blank" class="text-blue-200">{{sponsor.recruitment.link}}</a>
+                    <div class="flex items-center mb-6 ">
+                        <div class="h-36 rounded-lg mr-8 flex-shrink-0">
+                            <img :alt="sponsor.name" :src="getImagePath(sponsor.recruitment.image)"
+                                 class="w-full h-full object-contain">
+                        </div>
+                        <div class="flex-grow text-white">
+                            <p>{{ sponsor.recruitment.description }}</p>
+                            <a :href="sponsor.recruitment.url" class="text-blue-200" target="_blank">{{ sponsor.recruitment.url }}</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="flex justify-center">
@@ -38,14 +46,14 @@
 
 <script lang="ts" setup>
 
-import speakersData, { sponsorModel } from "@/data/sponsors";
+import sponsorsData, { sponsorModel } from "@/data/sponsors";
 import { useRoute, useRouter } from "vue-router";
 
 // 取得 router 的參數
 const route = useRoute();
 const sponsorId = route.params.id;
 
-const sponsor: sponsorModel = speakersData.find(s => s.id == sponsorId);
+const sponsor: sponsorModel = sponsorsData.find(s => s.id == sponsorId);
 const getImagePath = (image) => {
     return new URL(`../assets/${ image }`, import.meta.url).href;
 };

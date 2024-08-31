@@ -4,13 +4,13 @@ export interface sponsorModel {
     level: string;
     image: string;
     description: string[];
-    recruitment?: string;
+    recruitment?: recruitmentModel;
 }
 
 export interface recruitmentModel {
     description: string;
     image: string;
-    link: string;
+    url: string;
 }
 
 const sponsorsData: sponsorModel[] = [
@@ -53,10 +53,10 @@ const sponsorsData: sponsorModel[] = [
             '炬識科技成立於 2015 年，為台灣 Data & AI 系統整合與顧問服務領導品牌，以資料增益產業服務價值，透過資料產品化思維與資料管理方法論，發展資料驅動的企業決策框架，最大化資料的商業價值，提供兼具技術與顧問的全方位服務，擘畫產業數位轉型策略，激發企業成長動能。',
             '炬識科技專注 Data & AI 企業服務市場，協助客戶發展人與 AI 協作的企業級營運環境，與客戶攜手實現資料驅動的商業服務，維持 AI 時代下的競爭力。'
         ],
-        recruitment: {
+        recruitment:  {
             description: '炬識科技誠摯邀請您加入我們的團隊，一同打造更美好的未來！Welcome to Owl’s Nest: Exploring Athemaster’s Wisdom Hub',
-            image: 'sponsor-Athemaster-recruitment.jpg',
-            link: 'https://reurl.cc/QEZQdo'
+            image: 'sponsor-Athemaster-recruitment.png',
+            url: 'https://reurl.cc/QEZQdo'
         }
     },
     {
