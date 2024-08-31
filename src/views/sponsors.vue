@@ -17,8 +17,39 @@
                     討論遺留工作負載的演進，以及如何應對它們的變化，並探索系統設計的複雜性，重點考慮社會技術因素對軟體開發決策和執行的影響。期待深入探討企業決策者和一線執行團隊之間的合作方式，以實現系統設計和開發的目標。
                     歡迎贊助我們，讓技術帶領業務前進！
                 </p>
-
             </div>
+
+            <div>
+                <h2 class="flex pb-3 gap-2 justify-center">
+                    <img alt="ICON of golds sponsors" src="/images/golds-sponsors.svg" />
+                    <span class="text-3xl">黃金贊助商</span>
+                    <img alt="ICON of golds sponsors" src="/images/golds-sponsors.svg" />
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <sponsor-card v-for="sponsor in goldSponsors" :sponsor="sponsor" />
+                </div>
+            </div>
+            <div>
+                <h2 class="flex pb-3 gap-2 justify-center">
+                    <img alt="ICON of silver sponsors" src="/images/silver-sponsors.svg" />
+                    <span class="text-3xl">銀級贊助商</span>
+                    <img alt="ICON of silver sponsors" src="/images/silver-sponsors.svg" />
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <sponsor-card v-for="sponsor in silverSponsors" :sponsor="sponsor" />
+                </div>
+            </div>
+            <div>
+                <h2 class="flex pb-3 gap-2 justify-center">
+                    <img alt="ICON of special sponsors" src="/images/special-sponsors.svg" />
+                    <span class="text-3xl">特別贊助</span>
+                    <img alt="ICON of special sponsors" src="/images/special-sponsors.svg" />
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <sponsor-card v-for="sponsor in specialSponsors" :sponsor="sponsor" />
+                </div>
+            </div>
+
             <div class="text-center pt-30 pb-10">
                 <a class="bg-cyan-500 hover:bg-cyan-600 mx-auto rounded pt-2 pb-2 pl-5 pr-5" href="https://sharing.ddd-tw.com/2024DDDTWconf_sponsorship_proposal.pdf" target="_blank">
                     企業贊助
@@ -27,3 +58,14 @@
         </div>
     </section>
 </template>
+
+<script lang="ts" setup>
+import { ref } from 'vue';
+import sponsorsData from "@/data/sponsors";
+import SponsorCard from "@/components/sponsor-card.vue";
+
+const goldSponsors = ref(sponsorsData.filter(s => s.level === 'Gold'));
+const silverSponsors = ref(sponsorsData.filter(s => s.level === 'Sliver'));
+const specialSponsors = ref(sponsorsData.filter(s => s.level === 'Special'));
+
+</script>
