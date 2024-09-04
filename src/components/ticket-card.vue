@@ -39,21 +39,28 @@ const active = ref(false);
 const title = `${props.begin} ~ ${props.end}`;
 
 onMounted(() => {
-    const now = new Date();
+const now = new Date();
+const ticketBegin = new Date(props.begin);
+const ticketEnd = new Date(props.end);
 
-    const ticketBegin = new Date(props.begin);
-    const ticketEnd = new Date(props.end);
+// Set all times to midnight in the local timezone
+now.setHours(0, 0, 0, 0);
+ticketBegin.setHours(0, 0, 0, 0);
+ticketEnd.setHours(0, 0, 0, 0);
 
-    if (now < ticketBegin) {
-        buttonText.value = '尚未開賣';
-        active.value = false;
-    } else if (now > ticketEnd) {
-        buttonText.value = '已結束';
-        active.value = false;
-    } else {
-        buttonText.value = '立即購票';
-        active.value = true;
-    }
+// Add one day to ticketEnd to include the full end day
+ticketEnd.setDate(ticketEnd.getDate() + 1);
+
+if (now < ticketBegin) {
+    buttonText.value = '尚未開賣';
+    active.value = false;
+} else if (now >= ticketEnd) {
+    buttonText.value = '已結束';
+    active.value = false;
+} else {
+    buttonText.value = '立即購票';
+    active.value = true;
+}
 });
 
 </script>
