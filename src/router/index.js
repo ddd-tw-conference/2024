@@ -16,6 +16,7 @@ const routes = [
     {path: '/speakers', component: () => import('../views/speakers.vue')},
     {path: '/speakers/:id', name: 'speaker', component: () => import('../views/speaker.vue')},
     {path: '/sessions/:id', name: 'session', component: () => import('../views/session.vue')},
+    {path: '/map', name: 'map', component: () => import('../views/map.vue')},
 ];
 
 const router = createRouter({
