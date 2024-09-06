@@ -23,10 +23,10 @@
                 <thead>
                 <tr>
                     <th class="pin text-3xl font-semibold bg-sky-950 text-white w-24"></th>
-                    <th class="text-3xl font-semibold text-amber-300 bg-cyan-300/10 min-w-[20%]">A</th>
-                    <th class="text-3xl font-semibold text-lime-300 bg-lime-300/10 min-w-[20%]">B</th>
-                    <th class="text-3xl font-semibold text-cyan-500 bg-cyan-500/10 min-w-[20%]">C</th>
-                    <th class="text-3xl font-semibold text-fuchsia-500 bg-cyan-500/10 min-w-[20%]">W</th>
+                    <th class="text-3xl font-semibold text-amber-300 bg-cyan-300/10 min-w-[20%]">會議室 A (401)</th>
+                    <th class="text-3xl font-semibold text-lime-300 bg-lime-300/10 min-w-[20%]">會議室 B (402AB)</th>
+                    <th class="text-3xl font-semibold text-cyan-500 bg-cyan-500/10 min-w-[20%]">會議室 C (402CD)</th>
+                    <th class="text-3xl font-semibold text-fuchsia-500 bg-cyan-500/10 min-w-[20%]">工作坊 (403)</th>
                 </tr>
                 </thead>
                 <tbody>
