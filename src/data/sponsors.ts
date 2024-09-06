@@ -10,7 +10,7 @@ export interface sponsorModel {
 export interface recruitmentModel {
     description: string;
     image: string;
-    url: string;
+    url: string[];
 }
 
 const sponsorsData: sponsorModel[] = [
@@ -20,7 +20,14 @@ const sponsorsData: sponsorModel[] = [
         level: 'Sliver',
         image: 'sponsor-fable.jpg',
         description: [
-            'fable 寓意科技成立於 2012 年，致力於成為新型態 IT 顧問公司。提供技術顧問服務和軟體開發管理服務，有效地運用外包技術資源，打造軟體產品服務，近年更以企業內程序化管理以及 AI 應用為主要議題，為企業打造更高效與降低營運費用的流程管理。']
+            'fable 寓意科技成立於 2012 年，致力於成為新型態 IT 顧問公司。',
+            '提供技術顧問服務和軟體開發管理服務，有效地運用外包技術資源，打造軟體產品服務，近年更以企業內程序化管理以及 AI 應用為主要議題，為企業打造更高效與降低營運費用的流程管理。'],
+        recruitment: {
+            description: '目前徵才以資深專案經理、技術合作夥伴，兩大類為主。',
+            url: [
+                'https://www.cakeresume.com/companies/fable-1e9dc7/jobs/pm-digital-project-manager-89a54e',
+                'https://docs.google.com/forms/d/e/1FAIpQLSfLJwrHA7zsd3C1DIHPZxIO_kzxUtXuonuRlizYaESSwfM51Q/viewform']
+        }
     },
     {
         id: 'Jetbrains',
@@ -56,7 +63,7 @@ const sponsorsData: sponsorModel[] = [
         recruitment:  {
             description: '炬識科技誠摯邀請您加入我們的團隊，一同打造更美好的未來！Welcome to Owl’s Nest: Exploring Athemaster’s Wisdom Hub',
             image: 'sponsor-Athemaster-recruitment.png',
-            url: 'https://reurl.cc/QEZQdo'
+            url: ['https://reurl.cc/QEZQdo']
         }
     },
     {
@@ -90,7 +97,11 @@ const sponsorsData: sponsorModel[] = [
             'Edenred 宜睿智慧是全球領先的支付解決方案提供商，連接遍佈45個國家的企業、員工和商戶。我們提供多種解決方案，包括餐券、加油卡、禮券和虛擬支付卡，以提升員工福祉和企業效率。在全球，Edenred 集團擁有 12,000 名員工，並且是巴黎證券交易所上市公司，並入選CAC40等多個主要股票指數。',
             'Edenred 台灣自2010年以「Ticket Xpress即享券」品牌提供企業員工福利與行銷禮贈的數位解決方案。截至目前，公司已累計發行超過2億張電子票券，相當於48座台北101大樓的高度。這不僅展現了公司的市場影響力，還體現了其對環境保護的貢獻：減少紙張使用相當於保護了4萬棵樹木，並節省了 2 萬公升的水資源。',
             '另外 Edenred 台灣是目前台灣唯一獲得ISO14067碳足跡認證的電子票券商，彰顯了公司對環境可持續發展的堅定承諾。Edenred 持續推動企業社會責任（CSR），專注於環境保護、生活品質和理念追求三大概念。通過創新產品和服務，與合作企業共同實現 ESG（環境、社會和公司治理）目標，為建設更可持續的未來做出貢獻。'
-        ]
+        ],
+        recruitment: {
+            url: ['https://www.104.com.tw/company/wiezzvk',
+                'https://www.linkedin.com/company/edenred-taiwan/']
+        }
     }
 ];
 
