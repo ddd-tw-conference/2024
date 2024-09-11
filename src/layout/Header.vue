@@ -54,7 +54,15 @@ const isVolunteer = ref(false);
             </router-link>
           </li>
 
-          <!--                    <li class="pt-3 pb-3 mr-5">-->
+            <li class="pt-3 pb-3 mr-5">
+                <router-link class="font-me text-white hover:text-blue-300" to="/transportation">
+                    交通資訊
+                </router-link>
+            </li>
+
+
+
+            <!--                    <li class="pt-3 pb-3 mr-5">-->
           <!--                        <router-link class="font-me text-white hover:text-blue-300" to="/call-for-proposals">-->
           <!--                            徵求講者-->
           <!--                        </router-link>-->
