@@ -40,7 +40,7 @@ const agendaData: sessionModel[] = [
         topic: '面對 Legacy Code, 你有哪些選擇?',
         time: '13:30 - 14:15',
         session: 'A',
-        speaker: ['Kumn'],
+        speaker: ['Kuma'],
         level: '入門',
         description: ['工作上的 Legacy Code，應該是跟需求的改變一樣討厭吧？更常見的，其實是需求就那麼剛好得改 Legacy Code 的內容。有時候真的很想整組砍掉重寫，但「你知道，我知道，獨眼龍也知道」，砍掉重寫的結果，也就只是重演一遍當初這份 Legacy Code 的生產過程而已。可憐哪！',
             '問題來了，那不重寫，又有修改需求，這時到底 Legacy Code 要不要動、何時動、 如何動？難道又要（像以前一樣），放下自尊，使出「複製貼上改一改」、「加個 if 保護舊邏輯」兩大絕學？',
